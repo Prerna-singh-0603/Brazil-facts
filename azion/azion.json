@@ -1,0 +1,42 @@
+{
+  "name": "Brazil-facts",
+  "bucket": "",
+  "preset": "javascript",
+  "env": "production",
+  "prefix": "20241028073029",
+  "not-first-run": true,
+  "function": {
+    "id": 31300,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 29985,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 182340
+  },
+  "application": {
+    "id": 1730102244,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1730100911,
+    "name": "Brazil-facts",
+    "domain_name": "wbnd54crvh.map.azionedge.net",
+    "url": "https://wbnd54crvh.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 311959,
+        "name": "Execute Edge Function",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
