@@ -6,6 +6,7 @@
  * @returns {Response} https://developer.mozilla.org/en-US/docs/Web/API/Response
  */
 async function handleRequest(request, args) {
+ 
   // Determine the current hour to set a personalized greeting
   const currentHour = new Date().getHours();
   const greeting = currentHour < 12 ? "Good Morning" : currentHour < 18 ? "Good Afternoon" : "Good Evening";
@@ -60,12 +61,14 @@ async function handleRequest(request, args) {
     </head>
     <body>
       <div class="container">
-        <div class="icon">🇧🇷</div>
-        <div class="greeting">${greeting}!  Greetings from Brazil!</div>
+        <div class="icon">🌎🇧🇷</div>
+        <div class="greeting">${greeting}! Warm Greetings from Brazil!</div>
         <div class="content">
-          <p>Brazil is among the largest coffee-producing countries in the world. Coffee is an integral part of the lives of these people. There are some places where people never reject coffee when served. That is why it is considered impolite to say no to coffee when you are offered this drink at someone’s house in Brazil.☕ </p>
+          <p>Did you know? Brazil is known for its stunning natural beauty and rich cultural heritage.</p>
+          <p>From the vast Amazon Rainforest to the iconic Christ the Redeemer statue, Brazil is full of wonders!</p>
+          <p>Enjoy vibrant festivals like Carnival, white sandy beaches, and the joyful rhythms of samba. 🎶💃</p>
         </div>
-        <div class="footer">Everyone should try brazil coffee once in their life!</div>
+        <div class="footer">We hope you get to experience the magic of Brazil one day!</div>
       </div>
     </body>
     </html>
@@ -79,3 +82,5 @@ async function handleRequest(request, args) {
     status: 200,
   });
 }
+ 
+ 
