@@ -11,7 +11,8 @@ async function handleRequest(request, args) {
   const greeting = currentHour < 12 ? "Good Morning" : currentHour < 18 ? "Good Afternoon" : "Good Evening";
 
   // HTML message with CSS styling
-  const message = `
+ 
+⁠ ⁠ targetElement.innerHTML =`
     <!DOCTYPE html>
     <html lang="en">
     <head>
